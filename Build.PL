@@ -24,7 +24,7 @@ my $builder = Module::Build->new(
         'resources' => {
             'license' => 'http://dev.perl.org/licenses/',
             'repository' =>
-              'git://github.com/moznion/Acme--Math--PerfectChristmasTree.git',
+              'git://github.com/moznion/p5-Acme--Math--PerfectChristmasTree.git',
         },
     },
     test_files => ( -d '.git' || $ENV{RELEASE_TESTING} ) ? [qw(t/ xt/)] : ['t/'],

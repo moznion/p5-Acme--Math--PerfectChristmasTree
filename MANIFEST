@@ -2,7 +2,9 @@ Build.PL
 Changes
 eg/sample.pl
 lib/Acme/Math/PerfectChristmasTree.pm
+LICENSE
 MANIFEST			This list of files
+MANIFEST.SKIP
 META.json
 META.yml
 README
@@ -14,4 +16,3 @@ xt/pod-coverage.t
 xt/pod.t
 xt/podspell.t
 xt/synopsis.t
-LICENSE
