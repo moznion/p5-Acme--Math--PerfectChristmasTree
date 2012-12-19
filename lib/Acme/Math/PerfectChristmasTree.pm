@@ -38,110 +38,81 @@ sub _round {
 1;
 __END__
 
+=encoding utf8
+
 =head1 NAME
 
-Acme::Math::PerfectChristmasTree - [One line description of module's purpose here]
+Acme::Math::PerfectChristmasTree - Calculate the perfect Christmas tree
 
 
 =head1 VERSION
 
-This document describes Acme::Math::PerfectChristmasTree version 0.0.1
+This document describes Acme::Math::PerfectChristmasTree version 0.01
 
 
 =head1 SYNOPSIS
 
-    use Acme::Math::PerfectChristmasTree;
+    use Acme::Math::PerfectChristmasTree qw/calc_perfect_christmas_tree/;
 
-=for author to fill in:
-    Brief code example(s) here showing commonest usage(s).
-    This section will be as far as many users bother reading
-    so make it as educational and exeplary as possible.
+    my $tree_height  = 140; #<= centimeter
+    my %perfect_tree = calc_perfect_christmas_tree($tree_height);
+
+    # Content of %perfect_tree
+    #
+    # 'star_or_fairy_height' => 14,
+    # 'tinsel_length'        => 714.712328691678,
+    # 'number_of_baubles'    => 29,
+    # 'lights_length'        => 439.822971502571
 
 
 =head1 DESCRIPTION
 
-=for author to fill in:
-    Write a full description of the module and its features here.
-    Use subsections (=head2, =head3) as appropriate.
+    This module calculates perfect Christmas tree. Sorry, "perfect Christmas tree" is not a data tree.
+    So it has nothing to do with data structure.
+
+    This module is using an equation which was devised by mathematics club of The University Of Sheffield.
+    For more details, refer to the following web site.
+
+    L<http://www.shef.ac.uk/news/nr/debenhams-christmas-tree-formula-1.227810>
 
 
-=head1 INTERFACE
-
-=for author to fill in:
-    Write a separate section listing the public components of the modules
-    interface. These normally consist of either subroutines that may be
-    exported, or methods that may be called on objects belonging to the
-    classes provided by the module.
-
-
-=head1 DIAGNOSTICS
-
-=for author to fill in:
-    List every single error and warning message that the module can
-    generate (even the ones that will "never happen"), with a full
-    explanation of each problem, one or more likely causes, and any
-    suggested remedies.
+=head1 METHODS
 
 =over
 
-=item C<< Error message here, perhaps with %s placeholders >>
+=item calc_perfect_christmas_tree
 
-[Description of error here]
+Calculates perfect Christmas tree.
 
-=item C<< Another error message here >>
+This function needs an argument which specify height of tree (please input as centimeter).
 
-[Description of error here]
+This function returns hash. Keys of hash are...
 
-[Et cetera, et cetera]
+    'star_or_fairy_height'
+    'tinsel_length'
+    'number_of_baubles'
+    'lights_length'
+
+(Values of hash related to length or height are expressed as centimeter).
 
 =back
 
 
 =head1 CONFIGURATION AND ENVIRONMENT
 
-=for author to fill in:
-    A full explanation of any configuration system(s) used by the
-    module, including the names and locations of any configuration
-    files, and the meaning of any environment variables or properties
-    that can be set. These descriptions must also include details of any
-    configuration language used.
-
 Acme::Math::PerfectChristmasTree requires no configuration files or environment variables.
 
 
 =head1 DEPENDENCIES
 
-=for author to fill in:
-    A list of all the other modules that this module relies upon,
-    including any restrictions on versions, and an indication whether
-    the module is part of the standard Perl distribution, part of the
-    module's distribution, or must be installed separately. ]
-
-None.
-
+Test::Exception (Version 0.31 or later)
 
 =head1 INCOMPATIBILITIES
-
-=for author to fill in:
-    A list of any modules that this module cannot be used in conjunction
-    with. This may be due to name conflicts in the interface, or
-    competition for system or program resources, or due to internal
-    limitations of Perl (for example, many modules that use source code
-    filters are mutually incompatible).
 
 None reported.
 
 
 =head1 BUGS AND LIMITATIONS
-
-=for author to fill in:
-    A list of known problems with the module, together with some
-    indication Whether they are likely to be fixed in an upcoming
-    release. Also a list of restrictions on the features the module
-    does provide: data types that cannot be handled, performance issues
-    and the circumstances in which they may arise, practical
-    limitations on the size of data sets, special cases that are not
-    (yet) handled, etc.
 
 No bugs have been reported.
 
