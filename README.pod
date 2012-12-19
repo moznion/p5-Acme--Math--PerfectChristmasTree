@@ -42,7 +42,7 @@ Calculates perfect Christmas tree.
 
 This function needs an argument which specify height of tree (please input as centimeter).
 
-This function returns hash. Keys of hash are...
+This function returns a hash. Keys of hash are...
 
     'star_or_fairy_height'
     'tinsel_length'
