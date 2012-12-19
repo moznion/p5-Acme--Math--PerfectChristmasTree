@@ -18,13 +18,15 @@ SYNOPSIS
         # 'lights_length'        => 439.822971502571
 
 DESCRIPTION
-        This module calculates perfect Christmas tree. Sorry, "perfect Christmas tree" is not a data tree.
-        So it has nothing to do with data structure.
+    This module calculates perfect Christmas tree. Sorry, "perfect Christmas
+    tree" is not a data tree. So it has nothing to do with data structure.
 
-        This module is using an equation which was devised by mathematics club of The University Of Sheffield.
-        For more details, refer to the following web site.
+    This module is using an equation which was devised by mathematics club
+    of The University Of Sheffield. For more details, refer to the following
+    web site.
 
-        L<http://www.shef.ac.uk/news/nr/debenhams-christmas-tree-formula-1.227810>
+    <http://www.shef.ac.uk/news/nr/debenhams-christmas-tree-formula-1.227810
+    >
 
 METHODS
     calc_perfect_christmas_tree
