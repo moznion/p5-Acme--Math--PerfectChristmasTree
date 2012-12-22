@@ -6,7 +6,7 @@ Acme::Math::PerfectChristmasTree - Calculate the perfect Christmas tree
 
 =head1 VERSION
 
-This document describes Acme::Math::PerfectChristmasTree version 0.01
+This document describes Acme::Math::PerfectChristmasTree version 0.02
 
 =head1 SYNOPSIS
 

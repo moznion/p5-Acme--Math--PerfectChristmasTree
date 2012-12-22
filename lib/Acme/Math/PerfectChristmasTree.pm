@@ -8,7 +8,7 @@ use Math::Trig qw/pi/;
 
 use vars qw/$VERSION @ISA @EXPORT_OK/;
 BEGIN {
-    $VERSION = '0.01';
+    $VERSION = '0.02';
     @ISA     = qw/Exporter/;
     @EXPORT_OK = qw/calc_perfect_christmas_tree/;
 }
@@ -47,7 +47,7 @@ Acme::Math::PerfectChristmasTree - Calculate the perfect Christmas tree
 
 =head1 VERSION
 
-This document describes Acme::Math::PerfectChristmasTree version 0.01
+This document describes Acme::Math::PerfectChristmasTree version 0.02
 
 
 =head1 SYNOPSIS
