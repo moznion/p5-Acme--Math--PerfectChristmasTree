@@ -24,7 +24,7 @@ subtest 'perfect christmas tree that is 140cm' => sub {
 subtest 'perfect christmas tree that is 234.56cm' => sub {
     %got = calc_perfect_christmas_tree(234.56);
     ok( $got{'number_of_baubles'} == 48 );
-    ok( $got{'star_or_fairy_height'} == 23.456 );
+    ok( sprintf( '%5.7f', $got{'star_or_fairy_height'} ) == 23.4560000 );
     ok( sprintf( '%5.7f', $got{'tinsel_length'} ) == 1197.4494558 );
     ok( sprintf( '%5.7f', $got{'lights_length'} ) == 736.8919728 );
 };
